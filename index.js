@@ -101,7 +101,7 @@ const resetProgress = document.getElementById('resetProgress')
 const reset = (e) => {
     e.preventDefault()
     if(dataArr.length == 0){
-        return alert("No progress are available")
+        return alert("No progress available")
     }
     alert("All your progress will be gone")
     localStorage.clear()

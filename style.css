@@ -123,6 +123,7 @@ body {
 .enter-cont .enter {
     display: flex;
     flex-direction: column;
+    width: 75%;
     justify-content: center;
     align-items: center;
 } 
@@ -131,12 +132,14 @@ body {
     display: flex;
     font-size: 2rem;
     margin: 0.5rem 0;
+    max-width: 90%;
 }
 
 .enter-cont .enter input {
     display: flex;
     font-size: 2rem;
     margin: 0.5rem 0;
+    max-width: 90%;
 }
 
 .enter-cont .enter button {

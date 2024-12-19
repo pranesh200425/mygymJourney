@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id='logo' >
+        <h1>My Gym Journey</h1>
+    </div>
+
+    <section class="intro">
+        <p id="title" >Save your Gym progress...</p>
+        <p id="content" >No sign-in, No Account creation... All the data is saved locally in your device</p>
+    </section>
+
+    <div class="name">
+        <p>Hi,<p id="userName"></p></p>
+        <button id="edit"><i title="Edit name" class="fa-regular fa-pen-to-square"></i></button>
+    </div>
+    <div class="enter-cont">
+        <div class="enter">
+        <label for="name">Enter your name</label>
+        <input type="text" id="nameinput">
+        <button id="setnamebtn" >ok</button>
+        </div>
+    </div> 
+    <div id="today-card">
+        <div id="day">
+            <p id="dayNum" >1</p>
+        </div>
+        <div id="today-data">
+            <div id="height-container" class="num" >
+                <label for="weight">weight</label>
+                <input type="number" id="weight" name="weight" >
+            </div>
+            <div id="weight-container" class="num" >
+                <label for="height">height</label>
+                <input type="number" id="height" placeholder="(optional)" name="height" >
+            </div>
+            <div id="workouts" class="workouts">
+                <div class="workout-input-con" id="workoutCon" >
+                    <input type="text" id="workout-name" placeholder="workout" class="workout-input">
+                    <input type="number" placeholder="Kgs" class="workout-input" id="workout-kgs" >
+                    <input type="number" placeholder="reps" class="workout-input" id="workout-reps" >
+                    <input type="number" placeholder="no. of sets" class="workout-input" id="workout-sets" >
+                </div>
+            </div>
+            <div class="add">
+                <button id="addWorkout" >
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div id="done">
+            <button id="done-btn" class="addRecord" >
+                Done
+            </button>
+        </div>
+    </div>
+    <div class="reset">
+        <button id="resetProgress" >Reset progress</button>
+    </div>
+    <div id="rec-title" >
+        <p>Your Progress</p>
+    </div>
+    <div id='record-container' >
+    </div>
+    
+    <script src="index.js" type="module" ></script>
+</body>
+</html>

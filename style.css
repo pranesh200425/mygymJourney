@@ -396,7 +396,8 @@ body {
 .record .details .rec-workouts-con .rec-workout p {
     font-size: 0.75rem;
     font-weight: 600;
-    word-break: break-all;
+    padding: 0.5rem 0;
+    word-break: normal;
 }
 
 #wrknm {
